@@ -1,0 +1,283 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/home/spark/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/tmp/
+jun 06, 2020 9:10:24 AM com.redhat.quarkus.ls.QuarkusLanguageServer initialize
+INFORMAÇÕES: Initializing Quarkus server 0.0.4-20191120-1547 with /app/idea-IC/jbr
+jun 06, 2020 9:11:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 32,
+      "uri": "file:///home/spark/Documentos/repositorios/spring-data-reactive/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 5
+          },
+          "end": {
+            "line": 3,
+            "character": 0
+          }
+        },
+        "rangeLength": -5,
+        "text": ""
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.StringIndexOutOfBoundsException: start 14, end 9, length 49
+	at java.base/java.lang.AbstractStringBuilder.checkRangeSIOOBE(AbstractStringBuilder.java:1724)
+	at java.base/java.lang.AbstractStringBuilder.replace(AbstractStringBuilder.java:946)
+	at java.base/java.lang.StringBuilder.replace(StringBuilder.java:302)
+	at com.redhat.quarkus.ls.commons.TextDocument.update(TextDocument.java:177)
+	at com.redhat.quarkus.ls.commons.TextDocuments.onDidChangeTextDocument(TextDocuments.java:83)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:113)
+	... 16 more
+
+jun 06, 2020 9:11:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 39,
+      "uri": "file:///home/spark/Documentos/repositorios/spring-data-reactive/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 1,
+            "character": 6
+          },
+          "end": {
+            "line": 2,
+            "character": 0
+          }
+        },
+        "rangeLength": -6,
+        "text": ""
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.StringIndexOutOfBoundsException: start 7, end 1, length 49
+	at java.base/java.lang.AbstractStringBuilder.checkRangeSIOOBE(AbstractStringBuilder.java:1724)
+	at java.base/java.lang.AbstractStringBuilder.replace(AbstractStringBuilder.java:946)
+	at java.base/java.lang.StringBuilder.replace(StringBuilder.java:302)
+	at com.redhat.quarkus.ls.commons.TextDocument.update(TextDocument.java:177)
+	at com.redhat.quarkus.ls.commons.TextDocuments.onDidChangeTextDocument(TextDocuments.java:83)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:113)
+	... 16 more
+
+jun 06, 2020 9:12:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 72,
+      "uri": "file:///home/spark/Documentos/repositorios/spring-data-reactive/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 3,
+            "character": 14
+          },
+          "end": {
+            "line": 4,
+            "character": 0
+          }
+        },
+        "rangeLength": -14,
+        "text": ""
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.StringIndexOutOfBoundsException: start 30, end 16, length 152
+	at java.base/java.lang.AbstractStringBuilder.checkRangeSIOOBE(AbstractStringBuilder.java:1724)
+	at java.base/java.lang.AbstractStringBuilder.replace(AbstractStringBuilder.java:946)
+	at java.base/java.lang.StringBuilder.replace(StringBuilder.java:302)
+	at com.redhat.quarkus.ls.commons.TextDocument.update(TextDocument.java:177)
+	at com.redhat.quarkus.ls.commons.TextDocuments.onDidChangeTextDocument(TextDocuments.java:83)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:113)
+	... 16 more
+
+jun 06, 2020 9:12:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 88,
+      "uri": "file:///home/spark/Documentos/repositorios/spring-data-reactive/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 5
+          },
+          "end": {
+            "line": 3,
+            "character": 0
+          }
+        },
+        "rangeLength": -5,
+        "text": ""
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.StringIndexOutOfBoundsException: start 14, end 9, length 152
+	at java.base/java.lang.AbstractStringBuilder.checkRangeSIOOBE(AbstractStringBuilder.java:1724)
+	at java.base/java.lang.AbstractStringBuilder.replace(AbstractStringBuilder.java:946)
+	at java.base/java.lang.StringBuilder.replace(StringBuilder.java:302)
+	at com.redhat.quarkus.ls.commons.TextDocument.update(TextDocument.java:177)
+	at com.redhat.quarkus.ls.commons.TextDocuments.onDidChangeTextDocument(TextDocuments.java:83)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:113)
+	... 16 more
+
+jun 06, 2020 9:12:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 95,
+      "uri": "file:///home/spark/Documentos/repositorios/spring-data-reactive/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 1,
+            "character": 6
+          },
+          "end": {
+            "line": 2,
+            "character": 0
+          }
+        },
+        "rangeLength": -6,
+        "text": ""
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.StringIndexOutOfBoundsException: start 7, end 1, length 152
+	at java.base/java.lang.AbstractStringBuilder.checkRangeSIOOBE(AbstractStringBuilder.java:1724)
+	at java.base/java.lang.AbstractStringBuilder.replace(AbstractStringBuilder.java:946)
+	at java.base/java.lang.StringBuilder.replace(StringBuilder.java:302)
+	at com.redhat.quarkus.ls.commons.TextDocument.update(TextDocument.java:177)
+	at com.redhat.quarkus.ls.commons.TextDocuments.onDidChangeTextDocument(TextDocuments.java:83)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:113)
+	... 16 more
+
