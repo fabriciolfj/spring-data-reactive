@@ -43,7 +43,7 @@ public class RelationalReactiveApplication {
 	/*
 	* Forma simplificada de executar os scritps de criação.
 	* */
-	/*@Bean
+	@Bean
 	public ConnectionFactoryInitializer initializer(ConnectionFactory connectionFactory) {
 		ConnectionFactoryInitializer initializer = new ConnectionFactoryInitializer();
 		initializer.setConnectionFactory(connectionFactory);
@@ -51,5 +51,5 @@ public class RelationalReactiveApplication {
 		populator.addPopulators(new ResourceDatabasePopulator(new ClassPathResource("schema.sql")));
 		initializer.setDatabasePopulator(populator);
 		return initializer;
-	}*/
+	}
 }
